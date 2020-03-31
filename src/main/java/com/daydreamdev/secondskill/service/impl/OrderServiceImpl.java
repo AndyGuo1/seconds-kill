@@ -46,6 +46,12 @@ public class OrderServiceImpl implements OrderService {
         return orderMapper.delOrderDBBefore();
     }
 
+    /**
+     * 库存校验 和 库存扣减 和 生成订单不是一个原子操作
+     * @param sid
+     * @return
+     * @throws Exception
+     */
     @Override
     public int createWrongOrder(int sid) throws Exception {
         Stock stock = checkStock(sid);

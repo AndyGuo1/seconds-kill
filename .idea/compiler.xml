@@ -9,8 +9,5 @@
         <module name="seconds-kill" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="seconds-kill" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
